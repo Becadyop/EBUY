@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500px;
+    color: rgb(255, 255, 255);
+}
+.navbar li:hover{
+  color: red;
+  
+}
+.contain{
+    display: flex;
+    /* justify-content: space-around; */
+    /* height: 800px; */
+    background-color: rgb(228, 186, 186);
+    width: 100%;
+}
+.products{
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255); 
+}
+.products button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 50px;
+    margin-top: 3%;
+    text-transform:uppercase;
+    border-radius: 3px;
+
+}
+.products button:hover{
+    color: rgb(243, 243, 243);
+    background-color: rgb(197, 4, 4);
+    cursor: pointer;
+
+
+}
+
+.img{
+    height: 200px;
+     width: 200px; 
+}
+
+.cont{
+    margin-left: 2%;
+    margin-top: 3%;
+    height: 70px;
+    width: 55%;
+    background-color: black;
+}
+.cont p{
+    color: white;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+    </style>
+</head>
+<body>
+
+   <div class="navbar">
+        <ul>
+            <li>user</li>
+          <li>products</li> 
+          <li>purchase</li>
+    </div>
+        <div class="contain">
+            <div class="products">
+                <img class="img" src="data:image/jpeg;base64,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" alt="">
+                        <button>buy now</button>
+            </div> 
+            <div class="cont">
+                <p>A camera is an optical instrument that captures images. Most cameras can capture 2D images, while some more advanced models can capture 3D images. At a basic level, most cameras consist of a sealed box (the camera body),</p>
+            </div>  
+        </div>
+         <div class="contain">
+            <div class="products">
+                <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfK9eD_tFCaxfT39MW4mQkeUZdLD7mFRR2pg&usqp=CAU" alt="">
+                   <button>buy now</button>
+            </div> 
+            <div class="cont">
+                <p>The iPhone is a line of smartphones produced by Apple Inc. which uses Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007.</p>
+            </div>  
+        </div>
+         <div class="contain">
+            <div class="products">
+                <img class="img" src="data:image/jpeg;base64,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" alt="">
+                               <button>buy now</button>
+
+            </div> 
+            <div class="cont">
+                <p>A camera is an optical instrument that captures images. Most cameras can capture 2D images, while some more advanced models can capture 3D images. At a basic level, most cameras consist of a sealed box (the camera body),</p>
+            </div>  
+        </div>
+         <div class="contain">
+            <div class="products">
+                <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfK9eD_tFCaxfT39MW4mQkeUZdLD7mFRR2pg&usqp=CAU" alt="">
+                         <button>buy now</button>
+            </div> 
+            <div class="cont">
+                <p>The iPhone is a line of smartphones produced by Apple Inc. which uses Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007.</p>
+            </div>  
+        </div>
+         <div class="contain">
+            <div class="products">
+                <img class="img" src="data:image/jpeg;base64,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" alt="">
+                               <button>buy now</button>
+
+            </div> 
+            <div class="cont">
+                <p>A camera is an optical instrument that captures images. Most cameras can capture 2D images, while some more advanced models can capture 3D images. At a basic level, most cameras consist of a sealed box (the camera body),</p>
+            </div>  
+        </div>
+         <div class="contain">
+            <div class="products">
+                <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfK9eD_tFCaxfT39MW4mQkeUZdLD7mFRR2pg&usqp=CAU" alt="">
+                               <button>buy now</button>
+
+            </div> 
+            <div class="cont">
+                <p>The iPhone is a line of smartphones produced by Apple Inc. which uses Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007.</p>
+            </div>  
+        </div>
+         
+</body>  
